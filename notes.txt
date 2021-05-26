@@ -1,0 +1,31 @@
+Part 1. (8:40am - 9:40am)
+    - Build a calculator
+    - Handle (), +, -, *, / operations
+    - Rules: () then * / then + -
+    - Brainstorming:
+        . Input: (5+8/2)*3/8+3 as a string. May have space inbetween
+        . Create an empty list of operations
+        . Create an empty list of numbers
+        . Traverse through the string
+            - If char is operation -> Add to Op.
+            - If char is num
+                . If prev char is * or / -> Evaluate right away
+                . Else -> Add to N
+            - If char is a ) -> Evaluate right away, then add result to N
+        . O_list = (, +, /, ), *, /, +
+
+Part 2. (9:50am - 11:10am)
+    - Input: a number, e.g. 59249 or 1392 or 923731
+    - Output: a largest number that is < input, whose digits are in asc order
+    - Brainstorming:
+        . Traverse through the digits
+        . Let reduced = False
+        . if dig[i] > dig[i+1]
+            . dig[i] = dig[i] - 1
+            . The rest of the digits = 9
+
+Part 3. (11:15am - 12:40pm)
+    - Graph a line, e.g. y = (5 + x/2)*3/8+3
+    - Get a dataset:
+        . For a range of x, get its y value
+        . Use it to plot points, then connect them
