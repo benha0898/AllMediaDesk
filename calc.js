@@ -58,7 +58,7 @@ function graph() {
 
     const header = document.getElementById("header");
     const chart = document.getElementById("plot");
-    header.textContent = "Loading...";
+    header.textContent = "View output in the console.";
     chart.innerHTML = "";
 
     // Prepare input
